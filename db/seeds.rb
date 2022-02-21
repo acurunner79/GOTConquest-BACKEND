@@ -6,29 +6,29 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# p User.create([
-#     {
-#         username: 'playerstest1',
-#         password: 'playerstest1'
-#     }
-# ])
+p User.create([
+    {
+        username: 'playerstest1',
+        password: 'playerstest1'
+    }
+])
 
 
-# p Player.create([
-#     {
-#         ingame_name: "test1",
-#         allegiance: "FK!T",
-#         keep_level: 30,
-#         house_level: 45,
-#         power_level: 174000000,
-#         building_power: 2966922,
-#         research_power: 3474695,
-#         troop_power:154820162,
-#         dragon_talent_power: 604500,
-#         armory_power: 8128207,
-#         user_id: 17
-#     }
-# ])
+p Player.create([
+    {
+        ingame_name: "test1",
+        allegiance: "FK!T",
+        keep_level: 30,
+        house_level: 45,
+        power_level: 174000000,
+        building_power: 2966922,
+        research_power: 3474695,
+        troop_power:154820162,
+        dragon_talent_power: 604500,
+        armory_power: 8128207,
+        user_id: 17
+    }
+])
 
 # p Infantry.create([{   
 #     inf_attack: 275.969,
