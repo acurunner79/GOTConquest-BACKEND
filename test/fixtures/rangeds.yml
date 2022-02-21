@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ranged_attack: 1
+  ranged_defense: 1
+  ranged_health: 1
+  ranged_attack_vs_player: 1
+  ranged_defense_vs_player: 1
+  ranged_health_vs_player: 1
+  ranged_attack_vs_players_inf: 1
+  ranged_attack_vs_players_ranged: 1
+  ranged_attack_vs_players_cav: 1
+  ranged_attack_vs_players_siege: 1
+  ranged_defense_vs_players_cav: 1
+  ranged_defense_vs_players_inf: 1
+  ranged_defense_vs_players_ranged: 1
+  ranged_defense_vs_players_siege: 1
+
+two:
+  ranged_attack: 1
+  ranged_defense: 1
+  ranged_health: 1
+  ranged_attack_vs_player: 1
+  ranged_defense_vs_player: 1
+  ranged_health_vs_player: 1
+  ranged_attack_vs_players_inf: 1
+  ranged_attack_vs_players_ranged: 1
+  ranged_attack_vs_players_cav: 1
+  ranged_attack_vs_players_siege: 1
+  ranged_defense_vs_players_cav: 1
+  ranged_defense_vs_players_inf: 1
+  ranged_defense_vs_players_ranged: 1
+  ranged_defense_vs_players_siege: 1
