@@ -1,5 +1,6 @@
 class InfantriesController < ApplicationController
-  # before_action :set_infantry, only: [:show, :update, :destroy]
+  before_action :set_infantry, only: [:show, :update, :destroy]
+  before_action :authorized
 
   # GET /infantries
   def index
@@ -39,9 +40,9 @@ class InfantriesController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    # def set_infantry
-    #   @infantry = Infantry.find(params[:id])
-    # end
+    def set_infantry
+      @infantry = Infantry.find(params[:id])
+    end
 
     # Only allow a list of trusted parameters through.
     def infantry_params
