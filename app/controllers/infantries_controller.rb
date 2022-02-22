@@ -13,12 +13,15 @@ class InfantriesController < ApplicationController
 
   # POST /infantries
   def create
-    infantry = Infantry.new(infantry_params)
+    @infantry = Infantry.new(infantry_params)
+    # @infantry.player = @player
 
-    if infantry.save
-      render status: 201, json: {infantry: infantry}
+    if @infantry.save
+      render json: @infantry, status: :created, location: @infantry
+      # render status: 201, json: {infantry: infantry}
     else
-      render status: 422, json: {infantry: infantry} 
+      render json: @infantry.errors, status: :unprocessable_entity
+      # render status: 422, json: {infantry: infantry} 
     end
   end
 
@@ -31,8 +34,7 @@ class InfantriesController < ApplicationController
 
   # DELETE /infantries/1
   def destroy
-    infantry = Infantry.destroy(params[:id])
-    render(status: 204)
+    @infantry.destroy
   end
 
   private
